@@ -3,12 +3,12 @@
     <div class="preloader-content">
       <b-row>
         <b-col lg="6">
-          <img class="logo" src="@/assets/logo sv.png" />
+          <img class="logo" src="@/assets/logo kpusv.png" />
         </b-col>
         <b-col lg="6">
           <b-container class="name">
             <h4 class="title text-white">
-              PEMIRA SV <br/>
+              PEMILU SV <br/>
               UNS 2021
             </h4>
             <div class="loader"></div>

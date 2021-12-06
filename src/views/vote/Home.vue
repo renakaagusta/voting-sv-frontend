@@ -8,7 +8,7 @@
     <div v-else>
       <div class="home-voting" />
       <video autoplay muted loop id="video-bg">
-        <source src="https://drive.google.com/uc?export=download&id=1ofpOo9GZHHMWjBzN7aZfY84g1J5pvLqB" type="video/mp4" />
+        <source src="" type="video/mp4" />
       </video>
       <div class="container-router">
         <transition name="fade" mode="out-in">
@@ -21,7 +21,6 @@
 
 <script>
 import Loader from "@/components/Loader";
-
 // @ is an alias to /src
 export default {
   name: "Home",
@@ -57,13 +56,13 @@ html {
   min-height: 100% !important;
   height: 100%;
 }
-
 .home-voting {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgb(0, 0, 0, 0.8) 80%
-    );
+      rgba(0, 0, 0, 0.85) 0%,
+      rgb(0, 0, 0, 0.85) 80%
+    ),
+    url("https://drive.google.com/uc?export=download&id=16wS39ZrmO5e-dfUFcLhlMBEWbLNKROoZ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -108,7 +107,6 @@ html {
     width: 480px;
   }
 }
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

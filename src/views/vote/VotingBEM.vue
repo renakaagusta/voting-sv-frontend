@@ -2,7 +2,7 @@
   <div class="voting">
     <div class="container text-left">
       <img src="" alt="" />
-      <h1 class="text-white tittle">PEMIRA SV UNS 2021</h1>
+      <h1 class="text-white tittle">PEMILU SV UNS 2021</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
         calon Ketua SV UNS
@@ -69,28 +69,20 @@ export default {
         showDenyButton: true,
         buttons: true,
       }).then((result) => {
-      
         if (result.isConfirmed) {
-          let data = {
-            id_participant: this.participant._id,
-            id_candidate_bem: this.id_candidate_bem,
-          };
-          axios
-            .put(process.env.VUE_APP_API_URL+"/participant/vote", data)
+            this.$router.push({
+              name: "VotingLegislatif",
+              params: { id: this.participant._id },
+              query: { id_candidate_bem: id_candidate },
+            })
             .then(() => {
               Swal.fire({
                 icon: "success",
                 title: "Pilihan anda berhasil dikirim",
-                showConfirmButton: true,
-              }).then(() => {
-                this.$store.commit("setAuthentication", false);
-                this.$router.push({
-                  name: "Announcement",
-                  query: { success: true },
-                });
-              });
+                showConfirmButton: true
             })
             .catch((err) => console.log(err));
+            })
         }
       });
     },

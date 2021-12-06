@@ -64,16 +64,13 @@ export default {
         .catch(err => {console.log(err)});
     },
     check() {
-      // cek data partisipan ada enggak
       if(this.dataParticipant == null) {
         this.$router.push({ name: "Error", params: {error : 'failed-not-found'}});
       } else {
-        // cek apakah sudah vote apa belum
         var dataParticipantString = JSON.parse(JSON.stringify(this.dataParticipant));
         if(Object.prototype.hasOwnProperty.call(dataParticipantString, 'voting')) {
           this.$router.push({ name: "Error", params: {error : 'failed-already-vote'}});
         } else {
-          // cek apakah sedang sesinya atau enggak
           var today = new Date();
           const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+('0' + today.getDate()).slice(-2);
           const time = ('0' + today.getHours()).slice(-2) + ":" + today.getMinutes() + ":" + today.getSeconds();

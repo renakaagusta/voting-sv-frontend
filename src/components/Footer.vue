@@ -7,7 +7,7 @@
             <div class="footer-logo">
               <img
                 class="rounded-circle"
-                src="@/assets/logo sv.png"
+                src="@/assets/logo kpusv.png"
                 alt=""
               />
             </div>
@@ -46,7 +46,7 @@
             <h5>Tentang Kami</h5>
             <ul>
               <li>
-                Alamat : <br />Jl. Flora Bulaksumur No.1, Kocoran, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+                Alamat : <br />Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta City, Central Java 57126
               </li>
             </ul>
           </div>

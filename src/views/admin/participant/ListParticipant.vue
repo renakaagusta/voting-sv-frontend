@@ -38,7 +38,6 @@
             ></i>
           </h3>
         </div>
-        <div>NIM : {{ participant.nim }}</div>
         <div>Email : {{ participant.email }}</div>
         <div>Sesi : {{ participant.session.number }}</div>
         <div v-if="participant.email_at != null">
@@ -80,7 +79,6 @@
             ></i>
           </h3>
         </div>
-        <div>NIM : {{ participant.nim }}</div>
         <div>Email : {{ participant.email }}</div>
         <div>Sesi : {{ participant.session.number }}</div>
         <div v-if="participant.email_at != null">

@@ -5,12 +5,12 @@
       <b-container class="container h-100 text-white">
         <b-row class="row h-100 justify-content-center align-items-center">
           <b-col lg="12">
-            <h1>PEMIRA SV UNS 2021</h1>
+            <h1>PEMILU SV UNS 2021</h1>
             <div class="inner">
               <span>
                 #svmemilih<br />
                 #suarasv<br />
-                #suksespemira2021
+                #suksespemilu2021
               </span>
             </div>
             <b-container class="mt-5">
@@ -58,7 +58,7 @@ export default {
     Footer,
   },
   created() {
-    document.title = "PEMIRA SV UNS 2021";
+    document.title = "PEMILU SV UNS 2021";
   },
 };
 </script>
@@ -140,7 +140,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/$typettps://drive.google.com/uc?export=download&id=1Ftc9Ov2QXhZJWllzfkk4okK8hxWgG_9");
+    url("https://drive.google.com/uc?export=download&id=1U1QfUuFX-uYV-1bd3IAx9zej7PqpFSge");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("http://semnas.tp.ugm.ac.id/wp-content/uploads/sites/936/2019/05/000_1247-1024x768.jpg");
+    url("https://drive.google.com/uc?export=download&id=1W0Bl9TcJbt-lNd-xb5Z02oxiCaFjVbvW");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

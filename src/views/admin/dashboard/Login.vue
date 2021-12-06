@@ -2,7 +2,7 @@
   <div class="page">
     <div class="sub-page">
       <h1 class="text-white" style="padding-top:20px;">
-        PEMIRA SV UNS 2021
+        PEMILU SV UNS 2021
       </h1>
       <div class="home-voting" />
       <b-container class="text-white mt-5 shadow-sm form-login p-3 rounded">
@@ -40,7 +40,7 @@ import Swal from "sweetalert2";
 export default {
   name: "Welcome",
   created() {
-    document.title = "PEMIRA SV UNS 2021";
+    document.title = "PEMILU SV UNS 2021";
   },
   data() {
     return {
@@ -92,7 +92,7 @@ html {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("http://semnas.tp.ugm.ac.id/wp-content/uploads/sites/936/2019/05/000_1247-1024x768.jpg");
+    url("https://drive.google.com/uc?export=download&id=16wS39ZrmO5e-dfUFcLhlMBEWbLNKROoZ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
