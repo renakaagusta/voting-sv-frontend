@@ -7,9 +7,6 @@
     </div>
     <div v-else>
       <div class="home-voting" />
-      <video autoplay muted loop id="video-bg">
-        <source src="" type="video/mp4" />
-      </video>
       <div class="container-router">
         <transition name="fade" mode="out-in">
           <router-view />
