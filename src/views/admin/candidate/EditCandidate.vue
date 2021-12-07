@@ -9,6 +9,9 @@
                     <b-form-group label="No Urut :" label-for="number">
                         <b-form-input type="text" id="number" aria-describedby="namaHelp" placeholder="Masukan No urut" v-model="dataCandidate.number"></b-form-input>
                     </b-form-group>
+                    <b-form-group label="Dapil :" label-for="subject">
+                        <b-form-input type="text" id="subject" aria-describedby="namaHelp" placeholder="Masukan Dapil" v-model="dataCandidate.subject"></b-form-input>
+                    </b-form-group>
                     <b-form-group label="Foto :" label-for="image">
                         <input id="image" ref="image" type="file" v-on:change="handleFileUpload(1)"/>
                     </b-form-group>
@@ -45,6 +48,7 @@ export default {
         dataCandidate: {
             name: '',
             number: '',
+            subject: '',
             image: '',
             cv: '',
             description: {},
@@ -56,6 +60,7 @@ export default {
             let formData = {
                 name:this.dataCandidate.name,
                 number:this.dataCandidate.number,
+                subject:this.dataCandidate.subject,
                 shortDescription:this.dataCandidate.description.short,
                 visionDescription:this.dataCandidate.description.vision,
                 missionDescription:this.dataCandidate.description.mission,

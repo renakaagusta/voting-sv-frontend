@@ -18,6 +18,9 @@
                         <b-form-group label="No Urut :" label-for="number">
                             <b-form-input type="text" id="number" aria-describedby="namaHelp" placeholder="Masukan No urut" v-model="dataCandidate.number"></b-form-input>
                         </b-form-group>
+                        <b-form-group label="Dapil :" label-for="subject">
+                            <b-form-input type="text" id="subject" aria-describedby="subject" placeholder="Masukan Subject" v-model="dataCandidate.subject"></b-form-input>
+                        </b-form-group>
                         <b-form-group label="Deskripsi :" label-for="short">
                             <vue-editor type="text" id="short" aria-describedby="namaHelp" placeholder="Masukan Deskripsi" v-model="dataCandidate.description.short"></vue-editor>
                         </b-form-group>
@@ -50,6 +53,7 @@ export default {
                 type: '',
                 name: '',
                 number: '',
+                subject: '',
                 image: '',
                 description: {},
             }
@@ -59,6 +63,7 @@ export default {
         addData() {
         let data = {
             'type': this.dataCandidate.type,
+            'subject': this.dataCandidate.subject,
             'name': this.dataCandidate.name,
             'number': this.dataCandidate.number,
             'image': this.dataCandidate.image,

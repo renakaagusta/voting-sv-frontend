@@ -21,7 +21,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
 import QrcodeDecoder from "qrcode-decoder";
-//import moment from "moment";
 
 export default {
   name: "Scan",

@@ -5,8 +5,8 @@
                 <div class="container bg-white mt-2 p-3 shadow-sm rounded">
                     <div id="pemira-card" class="p-3 bg-white" style="border: 2px inset #aaa">
                         <img src="@/assets/logo kpusv.png" style="height:50px; width:50px;"/>
-                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMIRA 2021</h2>
-                        <vue-qr v-bind:text="detail._id"></vue-qr><br/>
+                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMILU SV UNS 2021</h2>
+                        <vue-qr v-bind:text="detail.code"></vue-qr><br/>
                         <b>Nama</b><br/> {{ detail.name }}<br/>
                         <b>Email</b><br/> {{ detail.email }}<br/>
                         <b>Sesi</b><br/> {{ detail.session.number }}<br/>
