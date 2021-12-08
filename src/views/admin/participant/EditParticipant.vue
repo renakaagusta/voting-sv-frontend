@@ -10,6 +10,9 @@
                         <b-form-group label="NIM :" label-for="nim">
                             <b-form-input type="text" id="nim" aria-describedby="namaHelp" placeholder="Masukan NIM" v-model="dataParticipant.nim"></b-form-input>
                         </b-form-group>
+                        <b-form-group label="Dapil :" label-for="subject">
+                            <b-form-input type="text" id="subject" aria-describedby="namaHelp" placeholder="Masukan Dapil" v-model="dataParticipant.subject"></b-form-input>
+                        </b-form-group>
                         <b-form-group label="Email :" label-for="email">
                             <b-form-input type="text" id="email" aria-describedby="namaHelp" placeholder="Masukan Email" v-model="dataParticipant.email"></b-form-input>
                         </b-form-group>
