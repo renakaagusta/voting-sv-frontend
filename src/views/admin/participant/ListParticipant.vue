@@ -81,6 +81,7 @@
         </div>
         <div>Email : {{ participant.email }}</div>
         <div>Sesi : {{ participant.session.number }}</div>
+        <div>Dapil : {{ participant.subject }}</div>
         <div v-if="participant.email_at != null">
           Email telah dikirim pada :
           {{ getDateTime(new Date(participant.email_at)) }}

@@ -5,7 +5,7 @@
       <h1 class="text-white tittle">PEMILU SV UNS 2021</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        Calon Dewan Mahasiswa dibawah ini
+        Calon Dewan Mahasiswa Dapil {{ participant.subject }} dibawah ini
       </h4>
       <b-row>
         <b-col
@@ -14,7 +14,7 @@
           v-for="candidate in LegislatifCandidates"
           :key="candidate._id"
         >
-          <b-container class="bg-white p-0 rounded-sm shadow">
+          <b-container class="bg-white p-0 rounded-sm shadow" v-if="candidate.subject == participant.subject">
             <img
               class="img-profile w-100"
               v-bind:src="getImage(candidate.image)"
