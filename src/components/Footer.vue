@@ -21,7 +21,7 @@
             <h5>Hubungi kami</h5>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/kpusv.uns/">
                   <i class="fab fa-instagram"></i>
                   Instagram
                 </a>
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:kpusvuns@gmail.com">
                   <i class="far fa-envelope"></i>
                   Email
                 </a>

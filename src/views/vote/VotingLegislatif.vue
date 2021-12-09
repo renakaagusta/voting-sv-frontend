@@ -1,9 +1,9 @@
 <template>
   <div class="voting">
-    <div class="container text-left">
-      <img src="" alt="" />
+    <div class="container text-left" v-if="participant">
+    
       <h1 class="text-white tittle">PEMILU SV UNS 2021</h1>
-      <h4 class="text-white mt-1 mb-5">
+      <h4 class="text-white mt-1 mb-5" >
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
         Calon Dewan Mahasiswa Dapil {{ participant.subject }} dibawah ini
       </h4>
@@ -58,7 +58,7 @@ export default {
   name: "VotingLegislatif",
   data() {
     return {
-      participant: [],
+      participant: null,
       candidates: [],
       id_candidate_bem: "",
     };
@@ -96,18 +96,19 @@ export default {
       });
     },
     getImage(url) {
-      return  process.env.VUE_APP_API_URL+"../../..//" + url;
+      return  process.env.VUE_APP_API_URL+"../../../" + url;
     },
   },
-  mounted() {
-    axios
+  async mounted(){
+    
+    await axios
       .get(
         process.env.VUE_APP_API_URL+"/participant/" + this.$route.params.id
       )
       .then((res) => (this.participant = res.data.data))
       .catch((err) => console.log(err));
 
-    axios
+    await axios
       .get(process.env.VUE_APP_API_URL+"/candidate/all")
       .then((res) => (this.candidates = res.data.data))
       .catch((error) => console.log(error));
@@ -119,11 +120,11 @@ export default {
   },
   computed: {
     LegislatifCandidates: function() {
-      console.log(this.participant)
-      console.log(this.candidates)
-      return this.candidates.filter(function(candidate) {
-        return candidate.type == "legislatif" && candidate.subject == this.participant.subject ;
-      });
+      if(!this.participant.subject ) return this.candidates
+      
+      let filteredCandidates =  this.candidates.filter((candidate)=> candidate.type == "legislatif" && candidate.subject == this.participant.subject
+      );
+      return filteredCandidates
     },
   },
 };
