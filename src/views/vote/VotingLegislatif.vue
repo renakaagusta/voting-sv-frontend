@@ -14,7 +14,7 @@
           v-for="candidate in LegislatifCandidates"
           :key="candidate._id"
         >
-          <b-container class="bg-white p-0 rounded-sm shadow" v-if="candidate.subject == participant.subject">
+          <b-container class="bg-white p-0 rounded-sm shadow" >
             <img
               class="img-profile w-100"
               v-bind:src="getImage(candidate.image)"
@@ -96,7 +96,7 @@ export default {
       });
     },
     getImage(url) {
-      return "../../" + url;
+      return  process.env.VUE_APP_API_URL+"../../..//" + url;
     },
   },
   mounted() {
@@ -118,10 +118,10 @@ export default {
     }
   },
   computed: {
-    
     LegislatifCandidates: function() {
+      console.log(this.candidates)
       return this.candidates.filter(function(candidate) {
-        return candidate.type == "legislatif";
+        return candidate.type == "legislatif" && candidate.subject == "1" ;
       });
     },
   },
