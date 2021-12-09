@@ -221,8 +221,8 @@ export default {
       const time = format[2].split("T");
       this.date = parseInt(time[0]);
       //const clock = time[1].split(":");
-      this.hour = 15;
-      this.minute = 0;
+      this.hour = parseInt(clock[0]);
+      this.minute = parseInt(clock[1]);
     },
     findCandidateById(id) {
       var i = 0;
