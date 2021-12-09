@@ -220,7 +220,6 @@ export default {
       this.month = parseInt(format[1]);
       const time = format[2].split("T");
       this.date = parseInt(time[0]);
-      
       this.hour = parseInt(clock[0]);
       this.minute = parseInt(clock[1]);
     },
