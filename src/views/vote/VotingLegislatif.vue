@@ -119,9 +119,10 @@ export default {
   },
   computed: {
     LegislatifCandidates: function() {
+      console.log(this.participant)
       console.log(this.candidates)
       return this.candidates.filter(function(candidate) {
-        return candidate.type == "legislatif" && candidate.subject == "1" ;
+        return candidate.type == "legislatif" && candidate.subject == this.participant.subject ;
       });
     },
   },
