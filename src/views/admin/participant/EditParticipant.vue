@@ -45,6 +45,7 @@ export default {
                 name: '',
                 nim: '',
                 email: '',
+                subject: '',
                 session:{
                     number: 0
                 }
@@ -57,6 +58,7 @@ export default {
             let data = {
                 'name': this.dataParticipant.name,
                 'nim': this.dataParticipant.nim,
+                'subject': this.dataParticipant.subject,
                 'email': this.dataParticipant.email,
                 'sessionId': this.sessions[this.dataParticipant.session.number - 1]._id,
                 'sessionNumber': this.dataParticipant.session.number,
