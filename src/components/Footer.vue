@@ -7,12 +7,12 @@
             <div class="footer-logo">
               <img
                 class="rounded-circle"
-                src="@/assets/logo kpusv.png"
+                src="@/assets/logo kpufib.png"
                 alt=""
               />
             </div>
             <ul>
-              <li>KPU SV UNS</li>
+              <li>KPU FIB UNS</li>
             </ul>
           </div>
         </div>
@@ -21,7 +21,7 @@
             <h5>Hubungi kami</h5>
             <ul>
               <li>
-                <a href="https://www.instagram.com/kpusv.uns/">
+                <a href="https://www.instagram.com/kpufib.uns/">
                   <i class="fab fa-instagram"></i>
                   Instagram
                 </a>
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li>
-                <a href="mailto:kpusvuns@gmail.com">
+                <a href="mailto:kpufibuns@gmail.com">
                   <i class="far fa-envelope"></i>
                   Email
                 </a>
@@ -58,7 +58,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="copyright-text">
-              Copyright &copy; 2021 All rights reserved
+              Copyright &copy; 2022 All rights reserved
             </div>
           </div>
         </div>

@@ -5,9 +5,9 @@
 </template>
 <script>
 export default {
-  title: 'PEMILU SV UNS2021',
+  title: 'PEMILU FIB UNS2022',
   metaInfo: {
-    title: 'PEMILU SV UNS2021'
+    title: 'PEMILU FIB UNS2022'
   }
 }
 </script>

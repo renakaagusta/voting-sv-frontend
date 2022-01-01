@@ -4,18 +4,19 @@
             <b-col lg="6">
                 <div class="container bg-white mt-2 p-3 shadow-sm rounded">
                     <div id="pemira-card" class="p-3 bg-white" style="border: 2px inset #aaa">
-                        <img src="@/assets/logo kpusv.png" style="height:50px; width:50px;"/>
-                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMILU SV UNS 2021</h2>
+                        <img src="@/assets/logo kpufib.png" style="height:50px; width:50px;"/>
+                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMILU FIB UNS 2022</h2>
                         <vue-qr v-bind:text="detail.code"></vue-qr><br/>
                         <b>Nama</b><br/> {{ detail.name }}<br/>
                         <b>Email</b><br/> {{ detail.email }}<br/>
+                        <b>NIM</b><br/> {{ detail.nim }}<br/>
                         <b>Sesi</b><br/> {{ detail.session.number }}<br/>
                     </div><br/>
                     <b-button @click="send(detail.email, detail.name, detail.nim, detail._id)" class="ml-2" href="" variant="primary">
                         <i class="fas fa-paper-plane"></i>
                         Kirim
                     </b-button>
-                    <b-button @click="download('Kartu Pemilihan Pemira 2021_'+detail.name+'_'+detail.nim)" class="ml-2" href="" variant="primary">
+                    <b-button @click="download('Kartu Pemilihan Pemira 2022_'+detail.name+'_'+detail.nim)" class="ml-2" href="" variant="primary">
                         <i class="fas fa-file-download"></i>
                         Unduh
                     </b-button>
