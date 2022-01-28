@@ -7,12 +7,12 @@
             <div class="footer-logo">
               <img
                 class="rounded-circle"
-                src="@/assets/logo kpufib.png"
+                src="@/assets/logo fisip.png"
                 alt=""
               />
             </div>
             <ul>
-              <li>KPU FIB UNS</li>
+              <li>KPU FISIP UNS</li>
             </ul>
           </div>
         </div>
@@ -21,7 +21,7 @@
             <h5>Hubungi kami</h5>
             <ul>
               <li>
-                <a href="https://www.instagram.com/kpufib.uns/">
+                <a href="#">
                   <i class="fab fa-instagram"></i>
                   Instagram
                 </a>
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li>
-                <a href="mailto:kpufibuns@gmail.com">
+                <a href="#">
                   <i class="far fa-envelope"></i>
                   Email
                 </a>
@@ -46,7 +46,7 @@
             <h5>Tentang Kami</h5>
             <ul>
               <li>
-                Alamat : <br />Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta City, Central Java 57126
+                Alamat : <br />Jl. Ir. Sutami No.36A, Kentingan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126
               </li>
             </ul>
           </div>

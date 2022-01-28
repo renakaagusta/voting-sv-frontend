@@ -6,11 +6,12 @@
           style="margin-top: 50px;margin-bottom: 30px;"
           class="text-center text-white"
         >
-          Pengumuman Hasil Voting PEMILU 2022
+          Pengumuman Hasil Voting PEMIRA 2022
         </h1>
       </div>
     </div>
     <!-- bar chart -->
+    
     <div v-if="timeUp">
       <b-container>
         <b-row v-if="arrCandidateBEM.length > 0">
@@ -60,7 +61,7 @@ export default {
           type: "bar",
         },
         title: {
-          text: "Hasil Perhitungan Suara Calon Ketua BEM",
+          text: "Hasil Perhitungan Suara Calon Ketua FISIP UNS 2022",
         },
         xAxis: {
           categories: ["oke", "oke2", "oke3"],
@@ -125,7 +126,6 @@ export default {
         return candidate.type == "bem";
       });
     },
-    
   },
   methods: {
     checkEndTime() {
@@ -158,7 +158,6 @@ export default {
         if (this.BEMCandidates[i]._id == id) return i;
       }
     },
-    
     count() {
       setInterval(() => {
         var now = new Date();
@@ -192,7 +191,6 @@ export default {
         }
         this.arrCandidateBEM = totalCandidateBEM;
         n = 0;
-        
         var name = [];
         var vote = [];
         totalCandidateBEM.forEach((count) => {
@@ -221,8 +219,6 @@ export default {
       .get(process.env.VUE_APP_API_URL+"/participant/all")
       .then((res) => {
         this.participants = res.data.data;
-        console.log("..participant")
-        console.log(this.participants)
         this.count();
       })
       .catch((err) => console.log(err));

@@ -2,10 +2,10 @@
   <div class="voting">
     <div class="container text-left">
       <img src="" alt="" />
-      <h1 class="text-white tittle">PEMILU FIB UNS 2022</h1>
+      <h1 class="text-white tittle">PEMIRA FISIP UNS 2022</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        calon Ketua FIB UNS
+        calon DEMA FISIP UNS
       </h4>
       <b-row>
         <b-col
@@ -63,19 +63,18 @@ export default {
     };
   },
   methods: {
-    vote(id_candidate_bem, name_candidate) {
+    vote(id_candidate, name_candidate) {
       new Swal({
         title: "Anda Yakin Memilih " + name_candidate + " ?",
         showDenyButton: true,
         buttons: true,
       }).then((result) => {
+      
         if (result.isConfirmed) {
           let data = {
             id_participant: this.participant._id,
-            id_candidate_bem: id_candidate_bem,
+            id_candidate_bem: this.id_candidate_bem,
           };
-          console.log("..data")
-          console.log(data)
           axios
             .put(process.env.VUE_APP_API_URL+"/participant/vote", data)
             .then(() => {
@@ -96,7 +95,7 @@ export default {
       });
     },
     getImage(url) {
-      return  process.env.VUE_APP_API_URL+"../../../" + url;
+      return process.env.VUE_APP_API_URL+'../../../'+url;
     },
   },
   mounted() {

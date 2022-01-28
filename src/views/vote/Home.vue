@@ -7,6 +7,9 @@
     </div>
     <div v-else>
       <div class="home-voting" />
+      <video autoplay muted loop id="video-bg">
+        <source src="" type="video/mp4" />
+      </video>
       <div class="container-router">
         <transition name="fade" mode="out-in">
           <router-view />
@@ -59,7 +62,7 @@ html {
       rgba(0, 0, 0, 0.85) 0%,
       rgb(0, 0, 0, 0.85) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=12_2YVnbexCfJXLTHfrXhq-QEoNoeT6YX");
+    url("https://drive.google.com/uc?export=download&id=1zyjBbgw-D3uRRFENxVwe2z38a43dr7Mt");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

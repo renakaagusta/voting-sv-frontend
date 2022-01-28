@@ -5,12 +5,12 @@
       <b-container class="container h-100 text-white">
         <b-row class="row h-100 justify-content-center align-items-center">
           <b-col lg="12">
-            <h1>PEMILU FIB UNS 2022</h1>
+            <h1>PEMIRA FISIP UNS 2022</h1>
             <div class="inner">
               <span>
-                #fibmemilih<br />
-                #suarafib<br />
-                #suksespemilu2022
+                #fisipmemilih<br />
+                #suarafisip<br />
+                #suksespemira2022
               </span>
             </div>
             <b-container class="mt-5">
@@ -58,7 +58,7 @@ export default {
     Footer,
   },
   created() {
-    document.title = "PEMILU FIB UNS 2022";
+    document.title = "PEMIRA FISIP UNS 2022";
   },
 };
 </script>
@@ -140,7 +140,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=1cAOAMeraMyguJfWGQj99fjtXoANebxg6");
+    url("https://drive.google.com/uc?export=download&id=1Rp4HGOmR91yRgDOkfnRKVQsDs5fTpwkp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=1-1Hv9L2cpJPLQfTxLGiCdxrNcbU2eVdg");
+    url("https://drive.google.com/uc?export=download&id=19YYT0TFU2ZxCTjy9lOfkzS6IfEXh4_g5");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

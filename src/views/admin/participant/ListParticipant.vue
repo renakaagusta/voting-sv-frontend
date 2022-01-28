@@ -38,6 +38,7 @@
             ></i>
           </h3>
         </div>
+        <div>NIM : {{ participant.nim }}</div>
         <div>Email : {{ participant.email }}</div>
         <div>Sesi : {{ participant.session.number }}</div>
         <div v-if="participant.email_at != null">
@@ -79,9 +80,9 @@
             ></i>
           </h3>
         </div>
+        <div>NIM : {{ participant.nim }}</div>
         <div>Email : {{ participant.email }}</div>
         <div>Sesi : {{ participant.session.number }}</div>
-        <div>NIM : {{ participant.nim}}</div>
         <div v-if="participant.email_at != null">
           Email telah dikirim pada :
           {{ getDateTime(new Date(participant.email_at)) }}
@@ -259,10 +260,10 @@ export default {
           this.$route.params.page
       )
       .then((res) => {
-        console.log("..participants")
-        console.log(res)
         this.participants = res.data.data.participants;
         this.totalPage = res.data.data.totalPage;
+
+        console.log(this.participants[0])
       })
       .catch((error) => console.log(error));
   },

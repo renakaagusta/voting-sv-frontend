@@ -4,12 +4,12 @@
             <b-col lg="6">
                 <div class="container bg-white mt-2 p-3 shadow-sm rounded">
                     <div id="pemira-card" class="p-3 bg-white" style="border: 2px inset #aaa">
-                        <img src="@/assets/logo kpufib.png" style="height:50px; width:50px;"/>
-                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMILU FIB UNS 2022</h2>
-                        <vue-qr v-bind:text="detail.code"></vue-qr><br/>
+                        <img src="@/assets/logo fisip.png" style="height:50px; width:50px;"/>
+                        <h2 class="text-bold">Kartu Pemilihan<br/>PEMIRA 2022</h2>
+                        <vue-qr v-bind:text="detail._id"></vue-qr><br/>
                         <b>Nama</b><br/> {{ detail.name }}<br/>
-                        <b>Email</b><br/> {{ detail.email }}<br/>
                         <b>NIM</b><br/> {{ detail.nim }}<br/>
+                        <b>Email</b><br/> {{ detail.email }}<br/>
                         <b>Sesi</b><br/> {{ detail.session.number }}<br/>
                     </div><br/>
                     <b-button @click="send(detail.email, detail.name, detail.nim, detail._id)" class="ml-2" href="" variant="primary">

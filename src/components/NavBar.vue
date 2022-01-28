@@ -5,7 +5,7 @@
         <i class="fa fa-bars fa-2x"></i>
       </div>
       <div class="logo">
-        <img class="rounded-circle" src="@/assets/logo kpufib.png" alt="" />
+        <img class="rounded-circle" src="@/assets/logo fisip.png" alt="" />
       </div>
       <div class="menu">
         <ul>

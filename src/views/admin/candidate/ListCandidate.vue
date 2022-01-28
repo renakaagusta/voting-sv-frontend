@@ -15,8 +15,7 @@
               <b-container class="bg-white p-0 rounded-sm shadow">
                 <img class="img-profile" v-bind:src="getImage(candidate.image)"/>
                 <b-container class="mt-2 pb-2">
-                  <b> {{ candidate.name }} </b><br/>
-                  {{ candidate.type == 'legislatif' ? candidate.type + ' (' + candidate.subject + ')':candidate.type }} <br/>
+                  <b> {{ candidate.name }} </b> <br/>
                   {{ candidate.number }} <br/>
                   <router-link :to="{name:'DetailCandidate', params: {id: candidate._id}}">
                     <b-button class="mt-2" variant="primary">

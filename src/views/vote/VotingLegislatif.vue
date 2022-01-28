@@ -1,11 +1,11 @@
 <template>
   <div class="voting">
-    <div class="container text-left" v-if="participant">
-    
-      <h1 class="text-white tittle">PEMILU FIB UNS 2022</h1>
-      <h4 class="text-white mt-1 mb-5" >
+    <div class="container text-left">
+      <img src="" alt="" />
+      <h1 class="text-white tittle">PEMIRA FISIP UNS 2022</h1>
+      <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        Calon Dewan Mahasiswa Dapil {{ participant.subject }} dibawah ini
+        Calon Dewan Mahasiswa dibawah ini
       </h4>
       <b-row>
         <b-col
@@ -14,7 +14,7 @@
           v-for="candidate in LegislatifCandidates"
           :key="candidate._id"
         >
-          <b-container class="bg-white p-0 rounded-sm shadow" >
+          <b-container class="bg-white p-0 rounded-sm shadow">
             <img
               class="img-profile w-100"
               v-bind:src="getImage(candidate.image)"
@@ -58,7 +58,7 @@ export default {
   name: "VotingLegislatif",
   data() {
     return {
-      participant: null,
+      participant: [],
       candidates: [],
       id_candidate_bem: "",
     };
@@ -96,19 +96,18 @@ export default {
       });
     },
     getImage(url) {
-      return  process.env.VUE_APP_API_URL+"../../../" + url;
+      return "../../" + url;
     },
   },
-  async mounted(){
-    
-    await axios
+  mounted() {
+    axios
       .get(
         process.env.VUE_APP_API_URL+"/participant/" + this.$route.params.id
       )
       .then((res) => (this.participant = res.data.data))
       .catch((err) => console.log(err));
 
-    await axios
+    axios
       .get(process.env.VUE_APP_API_URL+"/candidate/all")
       .then((res) => (this.candidates = res.data.data))
       .catch((error) => console.log(error));
@@ -119,12 +118,11 @@ export default {
     }
   },
   computed: {
+    
     LegislatifCandidates: function() {
-      if(!this.participant.subject ) return this.candidates
-      
-      let filteredCandidates =  this.candidates.filter((candidate)=> candidate.type == "legislatif" && candidate.subject == this.participant.subject
-      );
-      return filteredCandidates
+      return this.candidates.filter(function(candidate) {
+        return candidate.type == "legislatif";
+      });
     },
   },
 };
