@@ -5,7 +5,7 @@
       <h1 class="text-white tittle">PEMIRA FISIP UNS 2022</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        calon DEMA FISIP UNS
+        calon Ketua BEM FISIP UNS
       </h4>
       <b-row>
         <b-col
@@ -63,7 +63,7 @@ export default {
     };
   },
   methods: {
-    vote(id_candidate, name_candidate) {
+    vote(id_candidate_bem, name_candidate) {
       new Swal({
         title: "Anda Yakin Memilih " + name_candidate + " ?",
         showDenyButton: true,
@@ -73,7 +73,7 @@ export default {
         if (result.isConfirmed) {
           let data = {
             id_participant: this.participant._id,
-            id_candidate_bem: this.id_candidate_bem,
+            id_candidate_bem: id_candidate_bem,
           };
           axios
             .put(process.env.VUE_APP_API_URL+"/participant/vote", data)
@@ -84,10 +84,11 @@ export default {
                 showConfirmButton: true,
               }).then(() => {
                 this.$store.commit("setAuthentication", false);
-                this.$router.push({
+                /*this.$router.push({
                   name: "Announcement",
                   query: { success: true },
-                });
+                });*/
+                console.log(data)
               });
             })
             .catch((err) => console.log(err));
