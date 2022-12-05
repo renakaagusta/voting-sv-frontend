@@ -61,7 +61,7 @@ export default {
           type: "bar",
         },
         title: {
-          text: "Hasil Perhitungan Suara Calon Ketua FISIP UNS 2022",
+          text: "Hasil Perhitungan Suara Calon Ketua HIMATIPA UGM 2022",
         },
         xAxis: {
           categories: ["oke", "oke2", "oke3"],

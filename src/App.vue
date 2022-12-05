@@ -5,9 +5,9 @@
 </template>
 <script>
 export default {
-  title: 'PEMIRA FISIP UNS2022',
+  title: 'PEMIRA HIMATIPA UGM2022',
   metaInfo: {
-    title: 'PEMIRA FISIP UNS2022'
+    title: 'PEMIRA HIMATIPA UGM2022'
   }
 }
 </script>

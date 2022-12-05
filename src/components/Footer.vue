@@ -7,12 +7,12 @@
             <div class="footer-logo">
               <img
                 class="rounded-circle"
-                src="@/assets/logo fisip.png"
+                src="@/assets/logo himatipa.png"
                 alt=""
               />
             </div>
             <ul>
-              <li>KPU FISIP UNS</li>
+              <li>KPU HIMATIPA UGM</li>
             </ul>
           </div>
         </div>

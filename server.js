@@ -7,7 +7,7 @@ app = express()
 //add this middleware
 app.use(history());    
 app.use(serveStatic(path.join(__dirname, 'dist')));
-var port = process.env.PORT || 5000
+var port = process.env.PORT || 3001
 app.listen(port)
 console.log('server started '+ port) 
 

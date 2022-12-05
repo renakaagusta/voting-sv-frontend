@@ -2,7 +2,7 @@
   <div class="page">
     <div class="sub-page">
       <h1 class="text-white" style="padding-top:20px;">
-        PEMIRA FISIP UNS 2022
+        PEMIRA HIMATIPA UGM 2022
       </h1>
       <div class="home-voting" />
       <b-container class="text-white mt-5 shadow-sm form-login p-3 rounded">
@@ -40,7 +40,7 @@ import Swal from "sweetalert2";
 export default {
   name: "Welcome",
   created() {
-    document.title = "PEMIRA FISIP UNS 2022";
+    document.title = "PEMIRA HIMATIPA UGM 2022";
   },
   data() {
     return {

@@ -2,7 +2,7 @@
   <div class="voting">
     <div class="container text-left">
       <img src="" alt="" />
-      <h1 class="text-white tittle">PEMIRA FISIP UNS 2022</h1>
+      <h1 class="text-white tittle">PEMIRA HIMATIPA UGM 2022</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
         Calon Dewan Mahasiswa dibawah ini

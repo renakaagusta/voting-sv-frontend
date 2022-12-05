@@ -5,11 +5,11 @@
       <b-container class="container h-100 text-white">
         <b-row class="row h-100 justify-content-center align-items-center">
           <b-col lg="12">
-            <h1>PEMIRA FISIP UNS 2022</h1>
+            <h1>PEMIRA HIMATIPA UGM 2022</h1>
             <div class="inner">
               <span>
-                #fisipmemilih<br />
-                #suarafisip<br />
+                #himatipamemilih<br />
+                #suarahimatipa<br />
                 #suksespemira2022
               </span>
             </div>
@@ -58,7 +58,7 @@ export default {
     Footer,
   },
   created() {
-    document.title = "PEMIRA FISIP UNS 2022";
+    document.title = "PEMIRA HIMATIPA UGM 2022";
   },
 };
 </script>
@@ -140,7 +140,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=1Rp4HGOmR91yRgDOkfnRKVQsDs5fTpwkp");
+    url("https://drive.google.com/uc?export=download&id=1mICr3zB5yBCrirAHAagMIN7cZKAy2Y5l");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@ b-button {
       rgba(0, 0, 0, 0.7) 0%,
       rgb(0, 0, 0, 0.7) 80%
     ),
-    url("https://drive.google.com/uc?export=download&id=19YYT0TFU2ZxCTjy9lOfkzS6IfEXh4_g5");
+    url("https://drive.google.com/uc?export=download&id=1EDlByIGRB2MkIbvOFjEaTr4TALwQ8cQF");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
