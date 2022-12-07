@@ -5,7 +5,7 @@
       <h1 class="text-white tittle">PEMIRA HIMATIPA UGM 2022</h1>
       <h4 class="text-white mt-1 mb-5">
         Halo {{ participant.name }}, Silakan Ketuk Pilih untuk memilih daftar
-        calon Ketua BEM HIMATIPA UGM
+        calon Ketua HIMATIPA HIMATIPA UGM
       </h4>
       <b-row>
         <b-col
@@ -84,10 +84,10 @@ export default {
                 showConfirmButton: true,
               }).then(() => {
                 this.$store.commit("setAuthentication", false);
-                /*this.$router.push({
+                this.$router.push({
                   name: "Announcement",
                   query: { success: true },
-                });*/
+                });
                 console.log(data)
               });
             })

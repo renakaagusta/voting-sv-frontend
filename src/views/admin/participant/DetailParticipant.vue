@@ -14,7 +14,7 @@
               style="height:50px; width:50px;"
             />
             <h2 class="text-bold">Kartu Pemilihan<br />PEMIRA 2022</h2>
-            <vue-qr text="okeoke"></vue-qr><br />
+            <vue-qr :text="detail._id"></vue-qr><br />
             <b>Nama</b><br />
             {{ detail.name }}<br />
             <b>NIM</b><br />

@@ -8,7 +8,7 @@
                         <b-form-group label="Tipe Kandidat :" label-for="type">
                             <b-form-select class="form-control" name="type" id="type" v-model="dataCandidate.type">
                                 <option value="">Pilih Tipe Kandidat</option>
-                                <option value="bem">Ketua BEM</option>
+                                <option value="bem">Ketua HIMATIPA</option>
                                 <option value="legislatif">Legislatif</option>
                             </b-form-select>
                         </b-form-group>
