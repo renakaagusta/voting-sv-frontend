@@ -140,7 +140,7 @@ export default {
 
           axios
             .post(
-              "http://localhost:3000/api/v1/mail",
+              "http://203.175.11.10:3000/api/v1/mail",
               data,
               {
                 headers: {

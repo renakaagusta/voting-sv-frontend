@@ -11,7 +11,6 @@
       </div>
     </div>
     <!-- bar chart -->
-    
     <div v-if="timeUp">
       <b-container>
         <b-row v-if="arrCandidateBEM.length > 0">
